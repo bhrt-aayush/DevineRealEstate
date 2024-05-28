@@ -4,8 +4,10 @@ import SignIn from "./pages/SignIn";
 import Profile from "./pages/Profile";
 import SignUp from "./pages/SignUp";
 import About from "./pages/About";
+import Header from "./components/Header";
 export default function App() {
-  return <BrowserRouter>
+  return (<BrowserRouter>
+  <Header></Header>
   <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/SignIn" element={<SignIn/>}/>
@@ -15,4 +17,5 @@ export default function App() {
     
   </Routes>
   </BrowserRouter>
+  );
 }
